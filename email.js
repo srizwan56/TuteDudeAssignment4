@@ -1,4 +1,4 @@
-emailjs.init("YOUR_PUBLIC_KEY");
+emailjs.init("8-Ep-eYSyZrCz84zA");
 
 const bookingForm = document.getElementById("booking-form");
 const bookingMessage = document.getElementById("booking-message");
@@ -13,7 +13,7 @@ bookingForm.addEventListener("submit", function(event) {
         total_amount: document.getElementById("total-amount").textContent
     };
 
-    emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formData)
+    emailjs.send("service_jbkc6mi", "template_x6ft0og", formData)
     .then(function(response) {
         console.log("SUCCESS!", response.status, response.text);
 
