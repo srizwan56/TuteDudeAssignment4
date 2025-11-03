@@ -62,8 +62,7 @@ bookingForm.addEventListener("submit", function (e) {
     total_amount: `₹${total}.00`,
   };
 
-  emailjs
-    .send("service_jbkc6mi", "template_x6ft0og", params)
+  emailjs.send("service_jbkc6mi", "template_x6ft0og", params)
     .then(() => {
       bookingMessage.style.display = "block";
       bookingForm.reset();
